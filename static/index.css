@@ -1,0 +1,127 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e redonda */
+}
+
+body {
+    background-color: #101B33;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Mantém o painel de login do lado direito */
+    align-items: center;
+}
+
+.login {
+    width: 380px;              /* Largura do painel direito */
+    height: 100vh;
+    background-color: #FFFAFA;
+    padding: 0 45px;           /* Espaçamento interno lateral */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;       /* Centra o conteúdo e limita a largura dos inputs */
+    box-shadow: -10px 0 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Envolvente do formulário para controlar a largura das caixas */
+.login form, 
+.login-content {
+    width: 100%;
+    max-width: 290px;          /* Limita a largura das caixas de texto para não ficarem largas */
+}
+
+/* Título */
+.login h1 {
+    color: #101B33;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Rótulos (Labels) */
+.login label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #556070;
+    margin-bottom: 6px;
+    margin-top: 14px;
+}
+
+/* Caixas de Texto (Inputs mais estreitas e elegantes) */
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 5px 14px;        /* Altura e espaçamento reduzidos */
+    border: 1.5px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #101B33;
+    background-color: #F8FAFC;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+/* Efeito ao clicar/focar na caixa de texto */
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: #101B33;
+    background-color: #FDFBF7;
+    box-shadow: 0 0 0 3px rgba(16, 27, 51, 0.12);
+}
+
+/* Botão de Login */
+.login button, 
+.login input[type="submit"] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 11px;
+    background-color: #101B33;
+    color: #FDFBF7;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Efeitos do botão */
+.login button:hover, 
+.login input[type="submit"]:hover {
+    background-color: #1c2b4d;
+    box-shadow: 0 4px 12px rgba(16, 27, 51, 0.25);
+}
+
+.login button:active, 
+.login input[type="submit"]:active {
+    transform: scale(0.98);
+}
+img.logo {
+    position: fixed;
+    top: 48%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 60%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: #FFFAFA;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
